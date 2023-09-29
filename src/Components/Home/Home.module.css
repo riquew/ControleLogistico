@@ -1,0 +1,21 @@
+.homeConteudo {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.homeConteudo img {
+  max-width: 500px;
+}
+
+.homeConteudo h1 {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.controleBotao {
+  display: flex;
+  justify-content: space-between;
+}
