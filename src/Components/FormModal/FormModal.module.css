@@ -1,0 +1,8 @@
+.formPesquisa label {
+  font-size: 20px;
+}
+
+.formPesquisa input,
+select {
+  color: black;
+}

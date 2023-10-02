@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../img/logo.png";
 import styles from "./Home.module.css";
 
@@ -10,9 +10,15 @@ const Home = () => {
       </div>
       <h1>Controle Logístico</h1>
       <div className={styles.controleBotao}>
-        <button>PESQUISAR</button>
-        <button>INSERIR</button>
-        <button>PAGAR</button>
+        <Link to="pesquisar">
+          <button>PESQUISAR</button>
+        </Link>
+        <Link to="inserir">
+          <button>INSERIR</button>
+        </Link>
+        <Link to="pagar">
+          <button>PAGAR</button>
+        </Link>
       </div>
     </div>
   );

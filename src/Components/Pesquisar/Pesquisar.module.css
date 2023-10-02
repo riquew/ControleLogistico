@@ -1,0 +1,11 @@
+.pesquisarConteudo {
+  display: grid;
+}
+
+.pesquisarConteudo h1 {
+  margin-bottom: 40px;
+}
+
+/* .pesquisarConteudo h2 {
+  margin-bottom: 20px;
+} */

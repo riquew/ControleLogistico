@@ -1,0 +1,35 @@
+.modalButtonConteudo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalButton {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+}
+
+.modalArrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+
+.modalButton:hover {
+  border-color: #646cff;
+}
+
+.modalButton:focus,
+.modalButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
