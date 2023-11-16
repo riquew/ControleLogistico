@@ -1,11 +1,14 @@
 import React from "react";
 import FormPesquisa from "../FormPesquisa/FormPesquisa";
+import FormInserir from "../FormInserir/FormInserir";
 import styles from "./ModalButton.module.css";
 
-const ModalButton = ({ titulo }) => {
+const ModalButton = ({ titulo, modo }) => {
   const [modal, setModal] = React.useState(false);
   const modalArrow = React.useRef(null);
-  const labelArray = titulo === "Policial" ? ["RE", "Categoria"] : ["Nome"];
+  const pesquisaArray = titulo === "Policial" ? ["RE", "Categoria"] : ["Nome"];
+  const insereArray = titulo;
+  const funcao = modo;
 
   function toggleModal() {
     setModal(!modal);
@@ -24,7 +27,12 @@ const ModalButton = ({ titulo }) => {
           <i className={styles.modalArrow} ref={modalArrow}></i>
         </div>
       </div>
-      {modal && labelArray && <FormPesquisa labels={labelArray} />}
+      {modal && pesquisaArray && funcao === "pesquisa" && (
+        <FormPesquisa labels={pesquisaArray} />
+      )}
+      {modal && insereArray && funcao === "inserir" && (
+        <FormInserir labels={insereArray} />
+      )}
     </>
   );
 };

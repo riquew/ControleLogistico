@@ -8,10 +8,10 @@ const Inserir = () => {
       <div className="conteudo">
         <h1 className="titulo">Inserir</h1>
         <div>
-          <ModalButton titulo="Policial" />
+          <ModalButton titulo="Policial" modo="inserir" />
         </div>
         <div>
-          <ModalButton titulo="Item" />
+          <ModalButton titulo="Item" modo="inserir" />
         </div>
       </div>
     </div>

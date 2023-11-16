@@ -5,7 +5,7 @@ const FormPesquisa = ({ labels }) => {
     return (
       <form className={styles.formPesquisa}>
         <label htmlFor={labels[0]}>{labels[0]}</label>
-        <input type="text" name={labels} id="" placeholder="140948" />
+        <input type="text" name={labels[0]} id="" placeholder="140948" />
         <label htmlFor={labels[1]}>{labels[1]}</label>
         <select htmlFor={labels[1]}>
           <option value="fardamento">Fardamento</option>

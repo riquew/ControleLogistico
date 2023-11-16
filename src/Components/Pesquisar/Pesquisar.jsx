@@ -9,10 +9,10 @@ const Pesquisar = () => {
       <div className="conteudo">
         <h1 className="titulo">Pesquisar</h1>
         <div>
-          <ModalButton titulo="Policial" />
+          <ModalButton titulo="Policial" modo="pesquisa" />
         </div>
         <div>
-          <ModalButton titulo="Item" />
+          <ModalButton titulo="Item" modo="pesquisa" />
         </div>
       </div>
     </div>
