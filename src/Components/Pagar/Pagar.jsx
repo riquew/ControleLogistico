@@ -4,7 +4,9 @@ const Pagar = () => {
   return (
     <div className="container">
       <BackButton />
-      Pagar
+      <div className="conteudo">
+        <h1 className="titulo">Pagar</h1>
+      </div>
     </div>
   );
 };

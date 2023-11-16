@@ -1,11 +1,11 @@
 import React from "react";
-import FormModal from "../FormModal/FormModal";
+import FormPesquisa from "../FormPesquisa/FormPesquisa";
 import styles from "./ModalButton.module.css";
 
 const ModalButton = ({ titulo }) => {
   const [modal, setModal] = React.useState(false);
   const modalArrow = React.useRef(null);
-  const labelArray = titulo === "Policial" ? ["RE", "Categoria"] : ["Código"];
+  const labelArray = titulo === "Policial" ? ["RE", "Categoria"] : ["Nome"];
 
   function toggleModal() {
     setModal(!modal);
@@ -24,7 +24,7 @@ const ModalButton = ({ titulo }) => {
           <i className={styles.modalArrow} ref={modalArrow}></i>
         </div>
       </div>
-      {modal && labelArray && <FormModal labels={labelArray} />}
+      {modal && labelArray && <FormPesquisa labels={labelArray} />}
     </>
   );
 };

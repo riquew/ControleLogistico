@@ -1,6 +1,6 @@
-import styles from "./FormModal.module.css";
+import styles from "./FormPesquisa.module.css";
 
-const FormModal = ({ labels }) => {
+const FormPesquisa = ({ labels }) => {
   if (labels.length > 1) {
     return (
       <form className={styles.formPesquisa}>
@@ -18,15 +18,10 @@ const FormModal = ({ labels }) => {
     return (
       <form className={styles.formPesquisa}>
         <label htmlFor={labels[0]}>{labels[0]}</label>
-        <input
-          type="text"
-          name={labels}
-          id=""
-          placeholder="Código do Produto"
-        />
+        <input type="text" name={labels} id="" placeholder="Nome do Produto" />
       </form>
     );
   }
 };
 
-export default FormModal;
+export default FormPesquisa;
