@@ -1,6 +1,6 @@
 import React from "react";
 import BackButton from "../BackButton/BackButton";
-import ModalButton from "../ModalButton/ModalButton";
+import FormModel from "../FormModel/FormModel";
 
 const Pesquisar = () => {
   return (
@@ -9,10 +9,10 @@ const Pesquisar = () => {
       <div className="conteudo">
         <h1 className="titulo">Pesquisar</h1>
         <div>
-          <ModalButton titulo="Policial" modo="pesquisa" />
+          <FormModel titulo="Policial" modo="pesquisa" />
         </div>
         <div>
-          <ModalButton titulo="Item" modo="pesquisa" />
+          <FormModel titulo="Item" modo="pesquisa" />
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
   align-items: center;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  transition: border-color 0.25s;
+  transition: all 0.2s;
 }
 
 .backArrow {
@@ -22,6 +22,7 @@
 
 .backButton:hover {
   border-color: #646cff;
+  transform: scale(1.1);
 }
 
 .backButton:focus,

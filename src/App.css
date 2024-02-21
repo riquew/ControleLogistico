@@ -60,7 +60,7 @@ form {
 }
 
 label {
-  font-size: 28px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -73,6 +73,7 @@ select {
   font-size: 20px;
   outline: none;
   border: 2px solid #333;
+  color: #111;
 }
 
 .container {

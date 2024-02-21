@@ -1,5 +1,5 @@
 import BackButton from "../BackButton/BackButton";
-import ModalButton from "../ModalButton/ModalButton";
+import FormModel from "../FormModel/FormModel";
 
 const Inserir = () => {
   return (
@@ -8,10 +8,10 @@ const Inserir = () => {
       <div className="conteudo">
         <h1 className="titulo">Inserir</h1>
         <div>
-          <ModalButton titulo="Policial" modo="inserir" />
+          <FormModel titulo="Policial" modo="inserir" />
         </div>
         <div>
-          <ModalButton titulo="Item" modo="inserir" />
+          <FormModel titulo="Item" modo="inserir" />
         </div>
       </div>
     </div>

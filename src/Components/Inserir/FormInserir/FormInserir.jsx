@@ -34,7 +34,17 @@ const FormInserir = ({ labels }) => {
       </form>
     );
   } else {
-    return <div>{labels}</div>;
+    return (
+      <form>
+        <label htmlFor="nomeItem">Nome</label>
+        <input type="text" name="nomeItem" id="" placeholder="Caneta Preta" />
+        <label htmlFor="nome">Categoria</label>
+        <select htmlFor="posto">
+          <option value="em">Material</option>
+          <option value="1cia">Fardamento</option>
+        </select>
+      </form>
+    );
   }
 };
 

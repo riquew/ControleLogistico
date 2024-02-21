@@ -1,9 +1,9 @@
 import React from "react";
-import FormPesquisa from "../FormPesquisa/FormPesquisa";
-import FormInserir from "../FormInserir/FormInserir";
-import styles from "./ModalButton.module.css";
+import FormPesquisa from "../Pesquisar/FormPesquisa/FormPesquisa";
+import FormInserir from "../Inserir/FormInserir/FormInserir";
+import styles from "./FormModel.module.css";
 
-const ModalButton = ({ titulo, modo }) => {
+const FormModel = ({ titulo, modo }) => {
   const [modal, setModal] = React.useState(false);
   const modalArrow = React.useRef(null);
   const pesquisaArray = titulo === "Policial" ? ["RE", "Categoria"] : ["Nome"];
@@ -37,4 +37,4 @@ const ModalButton = ({ titulo, modo }) => {
   );
 };
 
-export default ModalButton;
+export default FormModel;
