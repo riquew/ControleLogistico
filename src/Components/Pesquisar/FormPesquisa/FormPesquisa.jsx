@@ -1,15 +1,43 @@
+import React from "react";
+import Api from "../../../Api";
+import { useNavigate } from "react-router-dom";
+
 const FormPesquisa = ({ labels }) => {
-  if (labels.length > 1) {
+  const [form, setForm] = React.useState({
+    re: "",
+    categoria: "",
+  });
+  const [data, setData] = React.useState(null);
+  const navigate = useNavigate();
+
+  function handleChange({ target }) {
+    const { id, value } = target;
+    setForm({ ...form, [id]: value });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    // const sql = {
+    //   sql: `SELECT * FROM POLICIAL WHERE RE = ${form.re}`,
+    // };
+    Api.get("pesquisar").then((response) => setData(response.data));
+    navigate(`/pesquisar/${form.re}`);
+  }
+
+  if (labels[0] === "RE") {
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor={labels[0]}>{labels[0]}</label>
-        <input type="text" name={labels[0]} id="" placeholder="140948" />
-        <label htmlFor={labels[1]}>{labels[1]}</label>
-        <select htmlFor={labels[1]}>
-          <option value="fardamento">Fardamento</option>
-          <option value="materiais">Materiais</option>
-          <option value="completo">Completo</option>
-        </select>
+        <input
+          type="text"
+          name={labels[0]}
+          id="re"
+          value={form.re || ""}
+          placeholder="140948"
+          onChange={handleChange}
+        />
+
+        <button>Enviar</button>
       </form>
     );
   } else {

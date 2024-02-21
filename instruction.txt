@@ -1,2 +1,5 @@
-to run:
+front:
 npm run electron:dev
+
+server:
+npm start

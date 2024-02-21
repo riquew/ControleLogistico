@@ -6,7 +6,7 @@ import styles from "./FormModel.module.css";
 const FormModel = ({ titulo, modo }) => {
   const [modal, setModal] = React.useState(false);
   const modalArrow = React.useRef(null);
-  const pesquisaArray = titulo === "Policial" ? ["RE", "Categoria"] : ["Nome"];
+  const pesquisaArray = titulo === "Policial" ? ["RE"] : ["Nome"];
   const insereArray = titulo;
   const funcao = modo;
 
